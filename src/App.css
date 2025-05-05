@@ -1,38 +1,142 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  body {
+    background-color: #f9f9f9;
+    color: #2c3e50;
+    line-height: 1.6;
   }
-  to {
-    transform: rotate(360deg);
+  
+  /* Navbar */
+  .navbar {
+    background-color: #1a1a1a;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
   }
-}
+  
+  .navbar h1 {
+    font-size: 1.6rem;
+    color: #0d6efd;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .navbar li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar li a:hover {
+    color: #0d6efd;
+  }
+  
+  /* About Section */
+  .about {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: #ffffff;
+  }
+  
+  .about h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    color: #0d6efd;
+  }
+  
+  .about p {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+  }
+  
+  /* Projects */
+  .projects {
+    background-color: #f0f2f5;
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  .projects h2 {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+    color: #0d6efd;
+  }
+  
+  .project-card {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    margin: 2rem auto;
+    max-width: 600px;
+  }
+  
+  .project-card h3 {
+    color: #2c3e50;
+  }
+  
+  .project-card p {
+    color: #555;
+  }
+  
+  .project-card a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: #0d6efd;
+    text-decoration: none;
+  }
+  
+  .project-card a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Contact Section */
+  .contact {
+    background-color: #ffffff;
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  .contact h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #0d6efd;
+  }
+  
+  .contact p {
+    font-size: 1.1rem;
+  }
+  
+  .contact a {
+    color: #0d6efd;
+    text-decoration: none;
+  }
+  
+  .contact a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #1a1a1a;
+    color: #cccccc;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
